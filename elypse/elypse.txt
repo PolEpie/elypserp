@@ -1,0 +1,7 @@
+"elypse"
+{
+    "base"          "base"
+    "title"         "elypse"
+    "maps"          ""
+    "menusystem"    "1"
+}

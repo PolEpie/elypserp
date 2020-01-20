@@ -1,0 +1,1 @@
+print( ajouter(5,6) )
