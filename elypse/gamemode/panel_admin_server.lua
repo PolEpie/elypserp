@@ -22,3 +22,13 @@ net.Receive( "Give", function( _, ply ) -- len is the net message length, which 
     net.ReadEntity():Give(net.ReadString())
     return
 end )
+
+net.Receive( "ChangeJob", function( _, ply ) -- len is the net message length, which we don't care about, ply is the player who sent it.
+    timer.Destroy("Salaire")
+    ply:SetTeam(net.ReadFloat())
+    ply:SetModel(net.ReadString())
+    timer.Create( "Salaire", 600, 0, function() 
+        Salaire(ply) 
+    end )
+    return
+end )

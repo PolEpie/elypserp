@@ -1,12 +1,12 @@
 --[[
-1 = Chomeur
-2 = Policier
-3 = Chef PO
-4 = Pompier
-5 = Medecin
-6 = Taxi
-7 = Maire
-8 = DGSS
+2 = Chomeur
+3 = Policier
+4 = Chef PO
+5 = Pompier
+6 = Medecin
+7 = Taxi
+8 = Maire
+9 = DGSS
 ]]--
 
 team.SetUp( 2, "Chômeur", Color( 76, 235, 52), true )

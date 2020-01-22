@@ -24,6 +24,7 @@ util.AddNetworkString( "FirstPanel" )
 util.AddNetworkString( "OpenInventory" )
 util.AddNetworkString( "SaveItems" )
 util.AddNetworkString( "SpawnProps" )
+util.AddNetworkString( "ChangeJob" )
 
 function GM:PlayerSpawn(ply)
     ply:StripWeapons()
@@ -82,3 +83,7 @@ net.Receive("SpawnProps", function(_,ply)
     barrel:SetHealth(obj["health"])
     barrel:Spawn()
 end)
+
+function Salaire(ply)
+    ply:SetNWInt("Money",ply:GetNWInt("Money") + 800 )
+end
